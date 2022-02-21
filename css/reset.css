@@ -1,29 +1,28 @@
 ﻿@charset "utf-8";
-/*样式重置 reset */
 *{ margin:0; padding:0; }
 body, h1, h2, h3, h4, h5, h6, p, dl, dd, ul, ol, input{
-    margin:0;/*去掉自带外间距*/
-    padding:0;/*去掉自带内填充*/
+    margin:0;
+    padding:0;
 }
 em, i{
-    font-style:normal;/*斜体扶正*/
+    font-style:normal;
 }
 li{
-    list-style:none;/*去掉默认列表符*/
+    list-style:none;
 }
 h1, h2, h3, h4, h5, h6, b, strong,th{
-    font-weight:normal;/*去掉标题自带加粗*/
+    font-weight:normal;
 }
 a{
-    outline:none;/*去掉描边*/
-    text-decoration:none;/*去掉自带下划线*/
+    outline:none;
+    text-decoration:none;
 }
 img{
-    border:none;/*去掉ie浏览器图片外面的边框*/
-    vertical-align:top;/*图片对齐方式*/
+    border:none;
+    vertical-align:top;
 }
 table{
-    border-collapse:collapse;/*去掉表格自带间隙*/
+    border-collapse:collapse;
     border-spacing:0;
 }
 th,td{
@@ -33,22 +32,22 @@ th,td{
 input{
     outline:none;
     border:none;
-    background-color:transparent;/*背景色透明*/
+    background-color:transparent;
     font-family: inherit;
 }
 textarea{
     outline:none;
-    resize:none;/*禁止调整文本域尺寸*/
-    overflow:auto;/*在浏览器默认状态下没有滚动条*/
+    resize:none;
+    overflow:auto;
 }
 body{
-    font-family:Arial,"微软雅黑", Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size:12px;
     line-height:1;
-    -webkit-text-size-adjust: 100%!important; /*禁止IOS调整字体大小*/
+    -webkit-text-size-adjust: 100%!important;
 }
 a,button,input,select,textarea {
-    -webkit-tap-highlight-color:rgba(0,0,0,0);  /*去掉a、input和button点击时的蓝色外边框和灰色半透明背景*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 

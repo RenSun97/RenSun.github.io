@@ -1,7 +1,8 @@
 body {
   background: #d4ebf1;
+  font-family: 'Courier New', Courier, monospace;
 }
-.header1 {
+.header {
   width: 1100px;
   margin: 0 auto;
   position: -webkit-sticky;
@@ -11,20 +12,33 @@ body {
   padding-top: 20px;
   top: 0;
 }
-.header1 h2 {
+.header h2 {
   color: #000;
   font-size: 30px;
   font-weight: bold;
   margin: 40px 10px;
   letter-spacing: 0.1em;
 }
-.header1 .nav ul {
+.header .nav ul {
   display: flex;
 }
-.header1 .nav ul li a {
-  font-size: 16px;
+.header .nav ul li a {
   color: #70959a;
   padding: 0 10px;
+  font-size: 16px;
+  line-height: 22px;
+}
+.header .nav ul li:hover a {
+  transition: 1s;
+  color: #ff0000;
+  font-size: 20px;
+}
+.header .nav ul li #current {
+  color: #d4ebf1;
+  background-color: #70959a;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 22px;
 }
 .wrap {
   width: 1100px;
@@ -53,6 +67,7 @@ body {
   display: inline-block;
 }
 .wrap .content .cont_left ul li a .crr {
+  width: 500px;
   display: inline-block;
 }
 .wrap .content .cont_left ul li a .crr h2 {
@@ -75,7 +90,7 @@ body {
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
 }
 .wrap .content .cont_right {
   width: 280px;
@@ -146,51 +161,60 @@ body {
   color: #808595;
   font-size: 12px;
 }
-.wrap .conten2 {
+.wrap .content .isgood_news ol li:first-child span {
+  color: red;
+}
+#grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+.wrap .about_content {
   background: rgba(255, 255, 255, 0.5);
   padding: 30px;
   margin: 20px 10px;
   border-radius: 3px;
 }
-.wrap .conten2 .cont2_title {
+.wrap .about_content .about_content_title {
   font-size: 24px;
   text-indent: 1em;
   border-bottom: #c3dae0 1px solid;
   padding-bottom: 20px;
 }
-.wrap .conten2 .cont2_title h5 {
+.wrap .about_content .about_content_title h5 {
   font-weight: 800;
 }
-.wrap .conten2 .cont2_text p {
+.wrap .about_content .about_content_text p {
   margin: 20px 0;
   text-indent: 2em;
   font-size: 16px;
   line-height: 32px;
   word-break: break-all;
 }
-.wrap .conten2 .cont2_teble .tab_top {
+.wrap .about_content .about_content_teble .tab_top {
   font-size: 24px;
   text-indent: 1em;
   padding-bottom: 20px;
 }
-.wrap .conten2 .cont2_teble .tab_top h3 {
+.wrap .about_content .about_content_teble .tab_top h3 {
   font-weight: 800;
   margin-top: 30px;
 }
-.wrap .conten2 .cont2_teble .tab_ipy .ipt_cont {
+.wrap .about_content .about_content_teble .tab_ipy .ipt_cont {
   margin-top: 20px;
 }
-.wrap .conten2 .cont2_teble .tab_ipy .ipt_cont textarea {
+.wrap .about_content .about_content_teble .tab_ipy .ipt_cont textarea {
   width: 100%;
   border: 1px solid #4398ed;
   padding: 13px 10px;
   border-radius: 10px;
   background-color: transparent;
 }
-.wrap .conten2 .cont2_teble .tab_ipy .ipt_btn {
+.wrap .about_content .about_content_teble .tab_ipy .ipt_btn {
   text-align: right;
 }
-.wrap .conten2 .cont2_teble .tab_ipy .ipt_btn button {
+.wrap .about_content .about_content_teble .tab_ipy .ipt_btn button {
   width: 102px;
   height: 30px;
   overflow: hidden;
@@ -210,11 +234,11 @@ body {
   line-height: 30px;
   color: #206050;
 }
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 600px) {
   html {
     font-size: 24px;
   }
-  .header1 {
+  .header {
     position: -webkit-sticky;
     position: sticky;
     padding-bottom: 20px;
@@ -223,20 +247,20 @@ body {
     background-color: #d4ebf1;
     width: 100vw;
   }
-  .header1 h2 {
+  .header h2 {
     color: #000;
     font-weight: bold;
     letter-spacing: 0.1em;
     text-align: center;
   }
-  .header1 .nav {
+  .header .nav {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100vw;
     background: #d4ebf1;
   }
-  .header1 .nav ul {
+  .header .nav ul {
     display: flex;
     justify-content: space-evenly;
     border: 1px solid white;
@@ -245,7 +269,7 @@ body {
     border-left: none;
     border-right: none;
   }
-  .header1 .nav ul li a {
+  .header .nav ul li a {
     font-size: 16px;
     color: #70959a;
     padding: 0 10px;
@@ -334,51 +358,51 @@ body {
   .wrap .content .isgood_news {
     display: none;
   }
-  .wrap .conten2 {
+  .wrap .about_content {
     background: rgba(255, 255, 255, 0.5);
     padding: 30px;
     margin: 20px 10px;
     border-radius: 3px;
   }
-  .wrap .conten2 .cont2_title {
+  .wrap .about_content .about_content_title {
     font-size: 24px;
     text-indent: 1em;
     border-bottom: #c3dae0 1px solid;
     padding-bottom: 20px;
   }
-  .wrap .conten2 .cont2_title h5 {
+  .wrap .about_content .about_content_title h5 {
     font-weight: 800;
   }
-  .wrap .conten2 .cont2_text p {
+  .wrap .about_content .about_content_text p {
     margin: 20px 0;
     text-indent: 2em;
     font-size: 16px;
     line-height: 32px;
     word-break: break-all;
   }
-  .wrap .conten2 .cont2_teble .tab_top {
+  .wrap .about_content .about_content_teble .tab_top {
     font-size: 24px;
     text-indent: 1em;
     padding-bottom: 20px;
   }
-  .wrap .conten2 .cont2_teble .tab_top h3 {
+  .wrap .about_content .about_content_teble .tab_top h3 {
     font-weight: 800;
     margin-top: 30px;
   }
-  .wrap .conten2 .cont2_teble .tab_ipy .ipt_cont {
+  .wrap .about_content .about_content_teble .tab_ipy .ipt_cont {
     margin-top: 20px;
   }
-  .wrap .conten2 .cont2_teble .tab_ipy .ipt_cont textarea {
+  .wrap .about_content .about_content_teble .tab_ipy .ipt_cont textarea {
     width: 100%;
     border: 1px solid #4398ed;
     padding: 13px 10px;
     border-radius: 10px;
     background-color: transparent;
   }
-  .wrap .conten2 .cont2_teble .tab_ipy .ipt_btn {
+  .wrap .about_content .about_content_teble .tab_ipy .ipt_btn {
     text-align: right;
   }
-  .wrap .conten2 .cont2_teble .tab_ipy .ipt_btn button {
+  .wrap .about_content .about_content_teble .tab_ipy .ipt_btn button {
     width: 102px;
     height: 30px;
     overflow: hidden;
