@@ -1,59 +1,73 @@
-.tableContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
+.wrap .about_content .about_content_table .tab_top {
+    font-size: 24px;
+    text-indent: 1em;
+    padding-bottom: 20px;
 }
-
-.table_header{
-    font-size: 30px;
-    font-weight: bolder;
-    margin: 20px;
+.wrap .about_content .about_content_table .tab_top h3 {
+    font-weight: 800;
+    margin-top: 30px;
 }
-
-.table{
-    width: 800px;
-    font-size: 16px;
+.wrap .about_content .about_content_table .tab_ipy .ipt_cont {
+    margin-top: 20px;
 }
-
-table,
-    td {
-    border: 2px solid #333;
-    padding: 10px;
-    }
-
-    td:first-child{
-        background-color: #70959a;
-        font-weight: bolder;
-    }
+.wrap .about_content .about_content_table .tab_ipy .ipt_cont textarea {
+    width: 100%;
+    border: 1px solid #4398ed;
+    padding: 13px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+.wrap .about_content .about_content_table .tab_ipy .ipt_btn {
+    text-align: right;
+}
+.wrap .about_content .about_content_table .tab_ipy .ipt_btn button {
+    width: 102px;
+    height: 30px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: #3c89d5;
+    color: white;
+    border-radius: 10px;
+    margin-top: 30px;
+}
 
 @media screen and (max-width: 800px) {
-    .tableContainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: auto;
+    .wrap .about_content .about_content_table .tab_top {
+        font-size: 24px;
+        text-indent: 1em;
+        padding-bottom: 20px;
     }
-    
-    .table_header{
-        font-size: 30px;
-        font-weight: bolder;
-        margin: 20px;
+    .wrap .about_content .about_content_table .tab_top h3 {
+        font-weight: 800;
+        margin-top: 30px;
     }
-    
-    .table{
+    .wrap .about_content .about_content_table .tab_ipy .ipt_cont {
+        margin-top: 20px;
+    }
+    .wrap .about_content . .tab_ipy .ipt_cont textarea {
         width: 100%;
-        font-size: 16px;
+        border: 1px solid #4398ed;
+        padding: 13px 10px;
+        border-radius: 10px;
+        background-color: transparent;
     }
-    
-    table,
-        td {
-        border: 2px solid #333;
-        padding: 10px;
-        }
-    
-        td:first-child{
-            background-color: #70959a;
-            font-weight: bolder;
-        }
+    .wrap .about_content .about_content_table .tab_ipy .ipt_btn {
+        text-align: right;
+    }
+    .wrap .about_content .about_content_table .tab_ipy .ipt_btn button {
+        width: 102px;
+        height: 30px;
+        overflow: hidden;
+        border: 0;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: #3c89d5;
+        color: white;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
 }

@@ -68,11 +68,11 @@ body {
   border-radius: 3px;
   display: inline-block;
 }
-.wrap .content .cont_left ul li a .crr {
+.wrap .content .cont_left ul li a .item_card {
   width: 500px;
   display: inline-block;
 }
-.wrap .content .cont_left ul li a .crr h2 {
+.wrap .content .cont_left ul li a .item_card h2 {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -82,7 +82,7 @@ body {
   color: black;
   font-weight: 800;
 }
-.wrap .content .cont_left ul li a .crr p {
+.wrap .content .cont_left ul li a .item_card p {
   text-indent: 1em;
   color: #888;
   font-size: 14px;
@@ -181,48 +181,6 @@ body {
 .wrap .about_content .about_content_title h5 {
   font-weight: 800;
 }
-.wrap .about_content .about_content_text p {
-  margin: 20px 0;
-  text-indent: 1em;
-  font-size: 16px;
-  line-height: 32px;
-  word-wrap:break-word;
-}
-.wrap .about_content .about_content_teble .tab_top {
-  font-size: 24px;
-  text-indent: 1em;
-  padding-bottom: 20px;
-}
-.wrap .about_content .about_content_teble .tab_top h3 {
-  font-weight: 800;
-  margin-top: 30px;
-}
-.wrap .about_content .about_content_teble .tab_ipy .ipt_cont {
-  margin-top: 20px;
-}
-.wrap .about_content .about_content_teble .tab_ipy .ipt_cont textarea {
-  width: 100%;
-  border: 1px solid #4398ed;
-  padding: 13px 10px;
-  border-radius: 10px;
-  background-color: transparent;
-}
-.wrap .about_content .about_content_teble .tab_ipy .ipt_btn {
-  text-align: right;
-}
-.wrap .about_content .about_content_teble .tab_ipy .ipt_btn button {
-  width: 102px;
-  height: 30px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  cursor: pointer;
-  background-color: #3c89d5;
-  color: white;
-  border-radius: 10px;
-  margin-top: 30px;
-}
 .wrap .foot p {
   font-size: 14px;
   border-top: rgba(255, 255, 255, 0.5) 1px solid;
@@ -299,11 +257,11 @@ body {
     border-radius: 3px;
     display: inline-block;
   }
-  .wrap .content .cont_left ul li a .crr {
+  .wrap .content .cont_left ul li a .item_card {
     display: inline-block;
     overflow: hidden;
   }
-  .wrap .content .cont_left ul li a .crr h2 {
+  .wrap .content .cont_left ul li a .item_card h2 {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -314,7 +272,7 @@ body {
     color: black;
     font-weight: 800;
   }
-  .wrap .content .cont_left ul li a .crr p {
+  .wrap .content .cont_left ul li a .item_card p {
     padding-right: 20px;
     text-indent: 1em;
     color: #888;
@@ -368,42 +326,6 @@ body {
   }
   .wrap .about_content .about_content_title h5 {
     font-weight: 800;
-  }
-
-  .wrap .about_content .about_content_teble .tab_top {
-    font-size: 24px;
-    text-indent: 1em;
-    padding-bottom: 20px;
-  }
-  .wrap .about_content .about_content_teble .tab_top h3 {
-    font-weight: 800;
-    margin-top: 30px;
-  }
-  .wrap .about_content .about_content_teble .tab_ipy .ipt_cont {
-    margin-top: 20px;
-  }
-  .wrap .about_content .about_content_teble .tab_ipy .ipt_cont textarea {
-    width: 100%;
-    border: 1px solid #4398ed;
-    padding: 13px 10px;
-    border-radius: 10px;
-    background-color: transparent;
-  }
-  .wrap .about_content .about_content_teble .tab_ipy .ipt_btn {
-    text-align: right;
-  }
-  .wrap .about_content .about_content_teble .tab_ipy .ipt_btn button {
-    width: 102px;
-    height: 30px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
-    background-color: #3c89d5;
-    color: white;
-    border-radius: 10px;
-    margin-top: 30px;
   }
   .wrap .foot p {
     font-size: 14px;
