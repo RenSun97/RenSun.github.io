@@ -16,7 +16,7 @@ body {
   color: #000;
   font-size: 30px;
   font-weight: bold;
-  margin: 40px 10px;
+  margin: 20px 10px;
   letter-spacing: 0.1em;
 }
 .header .nav ul {
@@ -58,6 +58,8 @@ body {
 }
 .wrap .content .cont_left ul li a {
   display: flex;
+  align-items: center;
+  margin: auto;
 }
 .wrap .content .cont_left ul li a img {
   width: 210px;
@@ -85,7 +87,7 @@ body {
   color: #888;
   font-size: 14px;
   line-height: 24px;
-  word-break: break-all;
+  word-wrap:break-word;
   overflow: hidden;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
@@ -115,60 +117,54 @@ body {
   color: #666;
   z-index: 2;
 }
-.wrap .content .isgood_news {
+.wrap .content .recommendation {
   margin-top: 30px;
   border-radius: 3px;
   background: rgba(255, 255, 255, 0.8);
   padding: 5px 20px 30px;
   overflow: hidden;
 }
-.wrap .content .isgood_news .h_title {
+.wrap .content .recommendation .h_title {
   font-size: 18px;
   padding-top: 20px;
   margin-bottom: 10px;
 }
-.wrap .content .isgood_news ul {
+.wrap .content .recommendation ul {
   padding-left: 20px;
 }
-.wrap .content .isgood_news ul li {
+.wrap .content .recommendation ul li {
   margin: 24px 0;
   list-style-type: circle;
   margin-top: 5px;
 }
-.wrap .content .isgood_news ul li a {
+.wrap .content .recommendation ul li a {
   text-decoration: none;
   color: #333;
 }
-.wrap .content .isgood_news ol li {
+.wrap .content .recommendation ol li {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid rgba(128, 128, 128, 0.432);
   line-height: 32px;
 }
-.wrap .content .isgood_news ol li a {
+.wrap .content .recommendation ol li a {
   line-height: 32px;
   width: 200px;
   text-decoration: none;
   color: #333;
 }
-.wrap .content .isgood_news ol li a p {
+.wrap .content .recommendation ol li a p {
   width: 200px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-.wrap .content .isgood_news ol li span {
+.wrap .content .recommendation ol li span {
   color: #808595;
   font-size: 12px;
 }
-.wrap .content .isgood_news ol li:first-child span {
+.wrap .content .recommendation ol li:first-child span {
   color: red;
-}
-#grid {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
 }
 .wrap .about_content {
   background: rgba(255, 255, 255, 0.5);
@@ -190,7 +186,7 @@ body {
   text-indent: 2em;
   font-size: 16px;
   line-height: 32px;
-  word-break: break-all;
+  word-wrap:break-word;
 }
 .wrap .about_content .about_content_teble .tab_top {
   font-size: 24px;
@@ -234,7 +230,7 @@ body {
   line-height: 30px;
   color: #206050;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   html {
     font-size: 24px;
   }
@@ -324,7 +320,7 @@ body {
     color: #888;
     font-size: 14px;
     line-height: 24px;
-    word-break: break-all;
+    word-wrap:break-word;
     overflow: hidden;
     text-overflow: ellipsis;
     -webkit-box-orient: vertical;
@@ -355,7 +351,7 @@ body {
     color: #666;
     z-index: 2;
   }
-  .wrap .content .isgood_news {
+  .wrap .content .recommendation {
     display: none;
   }
   .wrap .about_content {
@@ -373,13 +369,7 @@ body {
   .wrap .about_content .about_content_title h5 {
     font-weight: 800;
   }
-  .wrap .about_content .about_content_text p {
-    margin: 20px 0;
-    text-indent: 2em;
-    font-size: 16px;
-    line-height: 32px;
-    word-break: break-all;
-  }
+
   .wrap .about_content .about_content_teble .tab_top {
     font-size: 24px;
     text-indent: 1em;
