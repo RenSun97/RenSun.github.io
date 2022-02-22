@@ -83,7 +83,7 @@ body {
   font-weight: 800;
 }
 .wrap .content .cont_left ul li a .crr p {
-  text-indent: 2em;
+  text-indent: 1em;
   color: #888;
   font-size: 14px;
   line-height: 24px;
@@ -183,7 +183,7 @@ body {
 }
 .wrap .about_content .about_content_text p {
   margin: 20px 0;
-  text-indent: 2em;
+  text-indent: 1em;
   font-size: 16px;
   line-height: 32px;
   word-wrap:break-word;
@@ -316,7 +316,7 @@ body {
   }
   .wrap .content .cont_left ul li a .crr p {
     padding-right: 20px;
-    text-indent: 2em;
+    text-indent: 1em;
     color: #888;
     font-size: 14px;
     line-height: 24px;
