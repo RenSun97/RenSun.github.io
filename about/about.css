@@ -1,8 +1,10 @@
 #grid {
     display: grid;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(12, 50px);
+    grid-template-rows: repeat(8, 50px);
 }
 .img_me{
     height: 300px;
