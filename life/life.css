@@ -11,6 +11,11 @@
     border-radius: 16px;
 }
 
+.img_life:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
+
   @media screen and (max-width: 800px) {
     #grid {
         display: grid;
