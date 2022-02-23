@@ -25,20 +25,22 @@ body {
 .header .nav ul li a {
   color: #70959a;
   padding: 0 10px;
-  font-size: 16px;
-  line-height: 22px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 24px;
 }
 .header .nav ul li:hover a {
   transition: 1s;
-  color: #ff0000;
-  font-size: 20px;
+  color: #d4ebf1;
+  background-color: #70959a;
 }
 .header .nav ul li #current {
   color: #d4ebf1;
   background-color: #70959a;
   padding: 0 10px;
-  font-size: 16px;
-  line-height: 22px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 24px;
 }
 .wrap {
   width: 1100px;
@@ -224,7 +226,8 @@ body {
     border-right: none;
   }
   .header .nav ul li a {
-    font-size: 16px;
+    font-size: 18px;
+    height: 30px;
     color: #70959a;
     padding: 0 10px;
   }
